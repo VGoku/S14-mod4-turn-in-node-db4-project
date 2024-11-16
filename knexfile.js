@@ -1,7 +1,7 @@
 const shardConfig = {
     client: "sqlite3",
     migrations: { directory: "./data/migrations" },
-    seed: { directory: "./data/seeds" },
+    seeds: { directory: "./data/seeds" },
     //sqlite3 below
     useNullAsDefault: true,
     pool: { afterCreate:(conn, done) => conn.run("PRAGMA foreign_key = ON", done) },
